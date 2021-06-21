@@ -5,8 +5,16 @@
 
     reading json with node
 
-    import * fs from 'fs'
+    import fs from 'fs'
 
-    const content = await fs.readFile(path)
+    const content = fs.readFileSync(path, 'utf-8')
     const json = JSON.parse(content)
  */
+
+import * as IO from 'fp-ts/IO'
+import * as E from 'fp-ts/Either'
+
+
+function foo(a: unknown): IO.IO<string>{
+    return () => ''
+}
