@@ -9,14 +9,15 @@
 
     import * fs from 'fs'
 
-    fs.writeFile(path, JSON.stringify(data))
+    fs.writeFileSync(path, JSON.stringify(data))
 
     -----------------------------------
 
     reading json with node
 
-    import * fs from 'fs'
 
-    const content = await fs.readFile(path)
+    import fs from 'fs'
+
+    const content = fs.readFileSync(path, 'utf-8')
     const json = JSON.parse(content)
  */

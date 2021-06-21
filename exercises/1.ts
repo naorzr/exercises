@@ -10,11 +10,3 @@
     const content = fs.readFileSync(path, 'utf-8')
     const json = JSON.parse(content)
  */
-
-import * as IO from 'fp-ts/IO'
-import * as E from 'fp-ts/Either'
-
-
-function foo(a: unknown): IO.IO<string>{
-    return () => ''
-}
