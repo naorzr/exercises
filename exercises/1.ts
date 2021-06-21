@@ -1,0 +1,12 @@
+/*
+    read the json files/1.json file and add a property "was-read": true to the object
+
+    Note:
+
+    reading json with node
+
+    import * fs from 'fs'
+
+    const content = await fs.readFile(path)
+    const json = JSON.parse(content)
+ */
